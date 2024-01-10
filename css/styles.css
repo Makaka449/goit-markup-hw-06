@@ -513,28 +513,6 @@ img{
     
 }
 
-@media screen and (min-width: 1158px){
-    .container_div{
-        display: flex; /*квадратики off*/
-        align-items: center;
-        justify-content: center;
-        height: 112px;
-        background-color: #f4f4fd;
-        border-radius: 4px;
-        margin-bottom: 8px;
-        width: 288px;
-    }
-    .strategy_li{
-        width: calc((100% - 24px) / 2);
-    }
-}
-
-@media screen and (min-width: 768px){
-    .strategy_li{
-        width: calc((100% - 24px) / 2);
-    }
-}
-
 .container_div{
     display: none; /*квадратики off*/
     align-items: center;
@@ -548,6 +526,34 @@ img{
     justify-content: center
 
 }
+
+@media screen and (min-width: 768px){
+    .strategy_li{
+        width: calc((100% - 24px) / 2);
+    }
+}
+
+@media screen and (min-width: 1158px){
+    .container_div{
+        display: flex; /*квадратики off*/
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        background-color: #f4f4fd;
+        border-radius: 4px;
+        margin-bottom: 8px;
+        width: 288px;
+    }
+    .strategy_li{
+        width: calc((100% - 72px) / 4);
+    }
+
+    .strategy_li:not(:last-child){
+        margin-left: 24px;
+    }
+        
+}
+
 
 /*==============footer=============*/
 
@@ -634,7 +640,8 @@ img{
 
 .footer_wrapper_name{
     display: block;
-    text-align: start;
+    text-align: center;
+
 
 }
 
@@ -727,7 +734,7 @@ img{
 }
 
 .container_footer_b{
-    display: flex;
+    
     gap: 16px;
     align-items: center;
     justify-content: center;
